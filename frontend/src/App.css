@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+}
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  background: #f9f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background: #ec1515;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.5s ease;
+}
+
+.score {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  /* 🔥 THIS IS THE KEY */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;   /* vertical scrollbar */
+  overflow-x: hidden; /* avoid horizontal scroll */
+}
+/* Common container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #4ebbbe;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"],
+textarea,
+button {
+  width: 100%;
+}
+h2, h3, h4 {
+  text-align: center;
+}
+label {
+  width: 100%;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  color: #4a4a4a;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+/* File input & textarea */
+input[type="file"],
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #06b812;
+  font-size: 14px;
+
+  /* FIX */
+  background-color: #2f2f2f; /* dark background */
+  color: #ffffff;            /* WHITE text */
+}
+
+/* Placeholder text color */
+textarea::placeholder {
+  color: #bfbfbf;
+}
+
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Skill list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #5d69ae;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Score badge */
+.score {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #667eea;
+}
